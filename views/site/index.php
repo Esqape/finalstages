@@ -92,7 +92,7 @@ $this->title = 'My Yii Application';
                 <p>View all Posts in the system which consists of text,image and video content which is used to drive the Interactive Student Handbook.
                     </p>
 
-                <p><a class="btn btn-default" href="/../yii2test/basic/web/index.php/posts">View Content &raquo;</a></p>
+                <p><a class="btn btn-info" href="/../yii2test/basic/web/index.php/posts">View Content &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Create Content</h2>
@@ -100,7 +100,7 @@ $this->title = 'My Yii Application';
                 <p>Create new Posts to the system which consists of text,image and video content which is used to drive the Interactive Student Handbook.
                     </p>
 
-                <p><a class="btn btn-default" href="/../yii2test/basic/web/index.php/posts/create">Create Content &raquo;</a></p>
+                <p><a class="btn btn-info" href="/../yii2test/basic/web/index.php/posts/create">Create Content &raquo;</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>User Account Details</h2>
@@ -108,7 +108,7 @@ $this->title = 'My Yii Application';
                 <p>Your account details including account role, given permissions, details of posts you've created and some account statistics. 
                     </p>
 
-                <p><a class="btn btn-default" href="/../yii2test/basic/web/index.php/site/details">User Account &raquo;</a></p>
+                <p><a class="btn btn-info" href="/../yii2test/basic/web/index.php/site/details">User Account &raquo;</a></p>
             </div>
         </div>
 

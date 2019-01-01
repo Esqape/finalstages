@@ -31,7 +31,7 @@ use app\assets\AppAsset;
 
         <div class=jumbotron>
         <p class="lead">Click here to view Posts that you have created.</p>
-        <p><a class="btn btn-sm btn-primary" href="http://localhost/yii2test/basic/web/index.php/posts?PostsSearch%5Bpost_id%5D=&PostsSearch%5Btitle%5D=&PostsSearch%5Bbody%5D=&PostsSearch%5Bcreated_at%5D=&PostsSearch%5Bupdated_at%5D=&PostsSearch%5Buser_id%5D=<?= $model->id?>&PostsSearch%5Bimage_url%5D=&PostsSearch%5Bvideo_url%5D=">Your Posts</a></p>
+        <p><a class="btn btn-sm btn-primary" href="/yii2test/basic/web/index.php/posts?PostsSearch%5Bpost_id%5D=&PostsSearch%5Btitle%5D=&PostsSearch%5Bbody%5D=&PostsSearch%5Bcreated_at%5D=&PostsSearch%5Bupdated_at%5D=&PostsSearch%5Buser_id%5D=<?= $model->id?>&PostsSearch%5Bimage_url%5D=&PostsSearch%5Bvideo_url%5D=">Your Posts</a></p>
         </div>
 
         <div>
