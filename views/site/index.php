@@ -60,7 +60,7 @@ $this->title = 'My Yii Application';
                 visibility:visible;
             }
             #lgbtn {
-                visibility:visible;
+                visibility:hidden;
             }
         </style>
 
@@ -74,7 +74,7 @@ $this->title = 'My Yii Application';
                 visibility:hidden;
             }
             #lgbtn {
-                visibility:hidden;
+                visibility:visible;
             }
         </style>
             
