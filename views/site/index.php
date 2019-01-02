@@ -139,7 +139,7 @@ $this->title = 'SCMA CMS';
                 <p>Your account details including account role, given permissions, details of posts you've created and some account statistics. 
                     </p>
 
-                <p><a class="btn btn-info" href="/../yii2test/basic/web/index.php/site/details">User Account &raquo;</a></p>
+                <p><a class="btn btn-info" href="index.php/site/details">User Account &raquo;</a></p>
             </div>
         </div>
 

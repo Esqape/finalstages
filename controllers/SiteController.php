@@ -123,6 +123,19 @@ class SiteController extends Controller
     }
 
     /**
+     * Login action.
+     *
+     * @return Response|string
+     */
+
+    //public function actionDetails()
+    //{
+        //return $this->render('details', [
+            //'model' => $model,
+        //]);
+   // }
+
+    /**
      * Displays contact page.
      *
      * @return Response|string
