@@ -6,33 +6,61 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use yii\bootstrap\Carousel;
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'SCMA CMS';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>CMS</h1>
+    <div class="" style="text-align:center">
+        <h2>CMS for SMCA Interactive Student Handbook</h2>
 
-        <p class="lead">CMS for SMCA Interactive Student Handbook.</p>
 
-        <div id=lgbtn>
-        <p>
+
+
+<div class="slides" style="height:300px;min-height:300px;max-height:300px;max-width:100%;">
+        <?php
+        
+
+        echo Carousel::widget([
+            'items' => [
+                ['content' => '<img src="manage.jpg"/>',
+                'caption' => '<h4><b>Manage</b></h4><p><b>Manage your content</b></p>',
+                'options' => ['style' => 'height:300px;min-height:300px;max-height:300px;max-width:100%;'],
+                ],
+                ['content' => '<img src="your.png"/>',
+                'caption' => '<h4 style="color:#00ff00"><b>Access</b></h4><p style="color:#00ff00"><b>Easy access from anywhere</b></p>',
+                'options' => ['style' => 'height:300px;min-height:300px;max-height:300px;max-width:100%;'],
+                ],
+                [
+                    'content' => '<img src="content.jpg"/>',
+                    'caption' => '<h4 style="color:#ffffff"><b>Content</b></h4><p style="color:#ffffff"><b>Create content easily</b></p>',
+                    'options' => ['style' => 'height:300px;min-height:300px;max-height:300px;max-width:100%'],
+                ],
+            ],
+            'options' => ['style' => ['height:300px;min-height:300px;max-height:300px;max-width:100%;'],],
+        ]);
+        ?>
+</div>
 
         <?php
         if((Yii::$app->user->isGuest))
         {
-    ?>
-        <a class="btn btn-lg btn-primary" href="index.php\site\login">Get started by logging in</a>
-        
 
+            //slideshow
+        ?>
+        <br>
+        <div id=lgbtn>
+        <p>
+        <a class="btn btn-lg btn-primary" href="index.php\site\login">Get started by logging in</a>
         <?php
         }
-    ?>
-          </p></div> 
-          </div>
+        ?>
+          </p>
+        </div> 
+    </div>
 
  
         <?php
@@ -83,6 +111,9 @@ $this->title = 'My Yii Application';
 
         }
 
+        if(!(Yii::$app->user->isGuest))
+        {
+
     ?>
 
         <div class="row">
@@ -111,6 +142,10 @@ $this->title = 'My Yii Application';
                 <p><a class="btn btn-info" href="/../yii2test/basic/web/index.php/site/details">User Account &raquo;</a></p>
             </div>
         </div>
+
+        <?php
+        }
+        ?>
 
     </div>
 </div>

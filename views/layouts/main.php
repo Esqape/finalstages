@@ -26,36 +26,39 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap" style="background-color:lightblue">
+<div class="wrap" style="background-color:#e3f2fd">
     <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse nav-pills navbar-fixed-top',
-            'style' => 'background-color:#152D3E',
+            'class' => 'navbar navbar-light',
+            'style' => 'background-color: lightblue',
         ],
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Home', 'url' => ['/../index.php']],
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Content', 'url' => ['/posts'], 'visible' => !(Yii::$app->user->isGuest)],
             ['label' => 'Users', 'url' => ['/user'], 'visible' => ((!(Yii::$app->user->isGuest))&&(Yii::$app->user->identity->username=='Admin'))],
+            ['label' => 'Account', 'url' => ['/site/details'], 'visible' => !(Yii::$app->user->isGuest)],
             //['label' => 'Contact', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
-
+                
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post')
                 . Html::submitButton(
                     'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
+                    ['class' => 'btn btn-danger logout']
                 )
                 . Html::endForm()
                 . '</li>'
+                
+
 
                 
             )
@@ -65,7 +68,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <div class="container">
+    <div class="container" style="padding: 30px 15px 20px">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
@@ -76,7 +79,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; Kusal Prabath <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Esqape <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
