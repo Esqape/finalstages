@@ -39,6 +39,7 @@ class Posts extends \yii\db\ActiveRecord
             [['created_at', 'updated_at'], 'safe'],
             [['user_id'], 'integer'],
             [['title', 'image_url', 'video_url'], 'string', 'max' => 191],
+            [['title'], 'unique'],
             
         ];
     }

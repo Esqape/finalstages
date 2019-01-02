@@ -22,7 +22,7 @@ class UploadForm extends Model
     {
         return [
             [['file'], 'file','extensions' => 'jpg, png', 'mimeTypes' => 'image/jpeg, image/png',],
-            [['vidfile'], 'file','extensions' => 'mp4, mkv, avi', 'mimeTypes' => 'video/mp4, video/x-matroska, video/x-msvideo', 'maxSize' => 150 * 1024 *1024, 'tooBig' => 'Limit is 150MB'],
+            [['vidfile'], 'file','extensions' => 'mp4', 'mimeTypes' => 'video/mp4', 'maxSize' => 150 * 1024 *1024, 'tooBig' => 'Limit is 150MB'],
 
         ];
     }

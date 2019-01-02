@@ -22,7 +22,7 @@ use yii\db;
 
     <?= $form->field($model1, 'file')->fileInput()->label('Image File(optional)') ?>
 
-    <?= $form->field($model1, 'vidfile')->fileInput()->label('Video File(oprional)') ?>
+    <?= $form->field($model1, 'vidfile')->fileInput()->label('Video File(optional)') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

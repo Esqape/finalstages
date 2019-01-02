@@ -29,6 +29,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     {
         return [
             [['username', 'email','role'], 'required'],
+            [['username','email'], 'unique'],
             [['role'], 'integer'],
             [['username', 'email'], 'string', 'max' => 255],
         ];

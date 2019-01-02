@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use yii\bootstrap\Alert;
 
 /**
  * UserController implements the CRUD actions for User model.
@@ -109,11 +110,12 @@ class UserController extends Controller
     {
         $model = new User();
 
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
 
             if($model->role==2)
             {
-                // ssign "admin" role:
+                // assign "admin" role:
                 $auth = \Yii::$app->authManager;
                 $authorRole = $auth->getRole('admin');
                 $auth->assign($authorRole, $model->getId());

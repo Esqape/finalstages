@@ -13,6 +13,7 @@ use app\models\SignupForm;
 use app\models\UploadForm;
 use app\models\User;
 use yii\web\UploadedFile;
+use yii\bootstrap\Alert;
 
 class SiteController extends Controller
 {

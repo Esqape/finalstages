@@ -162,3 +162,22 @@ a.desc:after {
     height:300px; 
     max-width:150px;
   }
+
+  /* Split the screen in half */
+.split {
+    height: 100%;
+    width: 48%;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+   }

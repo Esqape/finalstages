@@ -27,16 +27,16 @@ $this->title = 'SCMA CMS';
         echo Carousel::widget([
             'items' => [
                 ['content' => '<img src="manage.jpg"/>',
-                'caption' => '<h4><b>Manage</b></h4><p><b>Manage your content</b></p>',
+                'caption' => '<h4 style="display: inline-block;padding:4px 4px 4px;color:#1c70bf;background-color:#1c1a1a"><b>Manage</b></h4><p style="display: inline-block;padding:4px 4px 4px;color:#ffffff;background-color:#1c1a1a"><b> content efficiently</b></p>',
                 'options' => ['style' => 'height:300px;min-height:300px;max-height:300px;max-width:100%;'],
                 ],
                 ['content' => '<img src="your.png"/>',
-                'caption' => '<h4 style="color:#00ff00"><b>Access</b></h4><p style="color:#00ff00"><b>Easy access from anywhere</b></p>',
+                'caption' => '<h4 style="display: inline-block;padding:4px 4px 4px;color:#d324d6;background-color:#1c1a1a"><b>Access</b></h4><p style="display: inline-block;padding:4px 4px 4px;color:#ffffff;background-color:#1c1a1a"><b>easily from anywhere</b></p>',
                 'options' => ['style' => 'height:300px;min-height:300px;max-height:300px;max-width:100%;'],
                 ],
                 [
                     'content' => '<img src="content.jpg"/>',
-                    'caption' => '<h4 style="color:#ffffff"><b>Content</b></h4><p style="color:#ffffff"><b>Create content easily</b></p>',
+                    'caption' => '<h4 style="display: inline-block;padding:4px 4px 4px;color:#42f47a;background-color:#1c1a1a"><b>Create</b></h4><p style="display: inline-block;padding:4px 4px 4px;color:#ffffff;background-color:#1c1a1a"><b> content freely</b></p>',
                     'options' => ['style' => 'height:300px;min-height:300px;max-height:300px;max-width:100%'],
                 ],
             ],
